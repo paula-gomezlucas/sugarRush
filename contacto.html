@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta chaeset = "UTF-8">
-        <mete name = "viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contacto</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SugarRush</title>
+  </head>
 
-    </head>
+  <body>
+    <header>
+      <h1>SugarRush</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <body>
-        
+    <main>
+      <section>
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o pedido especial? Envíanos un mensaje y te responderemos lo antes posible.</p>
 
-    </body>
-    
-    
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 123 456"><br><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Motivo de contacto</legend>
+
+            <label for="asunto">Asunto:</label><br>
+            <select id="asunto" name="asunto">
+              <option value="pedido">Pedido personalizado</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="comentario">Comentario general</option>
+              <option value="otros">Otros</option>
+            </select><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="40" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferencias</legend>
+            <input type="checkbox" id="newsletter" name="newsletter" value="sí">
+            <label for="newsletter">Deseo recibir novedades y promociones por correo electrónico</label><br><br>
+
+            <label>¿Cómo prefieres que te contactemos?</label><br>
+            <input type="radio" id="pref_email" name="contacto" value="email" checked>
+            <label for="pref_email">Correo electrónico</label><br>
+            <input type="radio" id="pref_tel" name="contacto" value="teléfono">
+            <label for="pref_tel">Teléfono</label><br><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Confirmación</legend>
+            <input type="submit" value="Enviar mensaje">
+            <input type="reset" value="Borrar todo">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        Calle Dulce 123, Madrid | Tel: 912345678 | Email: info@sugarrush.com
+      </address>
+      <p>© 2025 SugarRush</p>
+    </footer>
+  </body>
 </html>
